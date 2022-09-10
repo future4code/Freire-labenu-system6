@@ -1,0 +1,46 @@
+POST http://localhost:3003/criar-turma
+Content-Type: application/json
+
+{
+    "nome": "Alves"
+}
+
+###
+
+GET http://localhost:3003/selecionar-turmas-ativas
+
+###
+
+POST http://localhost:3003/mudanca-modulo
+Content-Type: application/json
+
+{
+    "idTurma":"003",
+    "modulo":"0"
+}
+
+###
+
+POST http://localhost:3003/criar-docente
+Content-Type: application/json
+
+{
+    "nome":"Anna",
+    "email":"anna@gmail.com",
+    "dataNascimento":"1989-08-10",
+    "turmaId":"003"
+}
+
+###
+
+GET http://localhost:3003/buscar-docentes
+
+###
+
+POST http://localhost:3003/mudanca-docente-turma
+Content-Type: application/json
+
+{
+    "idDocente":"",
+    "turma":"001"
+}
